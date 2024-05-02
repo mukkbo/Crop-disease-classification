@@ -20,6 +20,24 @@
 
 ![added](https://github.com/mukkbo/Crop-disease-classification/assets/133736337/7436df31-ccfc-48fe-92fc-48e97c00ec54)
 
+### 포도 질병 예시
+
+<div align="center">
+  <img src="https://github.com/mukkbo/Crop-disease-classification/assets/133736337/62b15472-c531-40f7-9a65-7dde9bd3632a" width="224" height="224"/>
+  <p align="center">노균병</p>
+</div>
+<div align="center">
+  <img src="https://github.com/mukkbo/Crop-disease-classification/assets/133736337/3989ef26-0e54-406f-b659-89e850137f24" width="224" height="224"/>
+   <p align="center">탄저병</p>
+</div>
+<div align="center">
+  <img src="https://github.com/mukkbo/Crop-disease-classification/assets/133736337/ff0773d1-b6ec-4c1d-80d7-1454a75733f7" width="224" height="224"/>
+   <p align="center">축과병</p>
+</div align="center">
+<div align="center">
+  <img src="https://github.com/mukkbo/Crop-disease-classification/assets/133736337/e38f617d-852d-44bd-9056-bce1c54d26bc"  width="224" height="224"/>
+   <p align="center">일소피해</p>
+</div>
 
 ## 2. Model
 ### a. ResNet50
