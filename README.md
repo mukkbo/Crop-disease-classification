@@ -63,18 +63,22 @@ confusion matrix를 분석한 결과, 노균병과 축과병은 눈으로 식별
 
 실험결과를 비교하기 위해, 포도 작물에 대해 아래 4가지 모델의 성능을 비교하였습니다.
 
-모델은 다음과 같습니다. ResNet50, ViT w/o fine-tuned, ViT w/ fine-tuned, MAE-ViT w/o fine-tuned
+모델은 다음과 같습니다. 
+1. ResNet50
+2. ViT w/o fine-tuned
+3. ViT w/ fine-tuned
+4. MAE-ViT w/o fine-tuned
+
 이때, MAE-ViT같은 경우는 fine-tuning을 위한 데이터가 부족하여 오히려 MAE-ViT w/ fine-tuned모델의 성능이 급격하게 떨어지는 것을 확인하였습니다. 그렇기에 비교를 위해서 MAE-ViT w/ fine-tuned 모델만 사용하였습니다.
 
-각각 모델의 성능은
-Simple ViT 69.8, MAE ViT 74%의 결과를 얻을 수 있었습니다.
-하지만 이때 Simple ViT는 Encoder를 frozen한 상태로 fc layer에서만 학습을 진행한 결과입니다.
+포도 모각각 모델의 성능은 다음과 같습니다.
 
+![image](https://github.com/mukkbo/Crop-disease-classification/assets/133736337/8cb0113d-0438-4305-bb14-b0134d037c2b)
 
-이 결과로 인해 MAE의 학습방식이 모델을 효과적으로 분류할 수 있다는 사실을 유추해냈고 각각의 작물에 대하여 이러한 방법을 적용하여 모델의 학습을 완료할 수 있었습니다.
+여기서 말하는 w/o fine-tuned는 Encoder를 frozen한 상태로 fc layer에서만 학습을 진행한 결과를 뜻 합니다.
 
-이를 통해 다른 작물들도 같은 방식으로 학습을 진행하였고 5가지 방식에서 모두 ResNet, ViT, MAE-ViT를 학습하였습니다. 하지만 일부모델에서는 예외도 존재하였습니다.
+이 결과로 인해 MAE의 학습방식이 모델을 효과적으로 분류할 수 있다는 사실은 유추하는 것을 실패했습니다. 다른 작물에서의 결과비교를 위해 다른 작물들에 대해서도 같은 실험을 반복하였습니다.
 
-결과, MAE-ViT 모델의 성능이 가장 높은 분류 정확도를 보였습니다.
+비교 표
+
 이 결과로부터, ViT가 ResNet보다 더 우수하다고 알려진 상황에서도 데이터셋에 따라 적합한 모델을 선택하는 것이 중요하다는 점을 확인할 수 있었습니다.
-
