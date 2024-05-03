@@ -71,7 +71,7 @@ confusion matrix를 분석한 결과, 노균병과 축과병은 눈으로 식별
 
 이때, MAE-ViT같은 경우는 fine-tuning을 위한 데이터가 부족하여 오히려 MAE-ViT w/ fine-tuned모델의 성능이 급격하게 떨어지는 것을 확인하였습니다. 그렇기에 비교를 위해서 MAE-ViT w/ fine-tuned 모델만 사용하였습니다.
 
-포도 모각각 모델의 성능은 다음과 같습니다.
+포도 모델의 성능은 각각 다음과 같습니다.
 
 ![image](https://github.com/mukkbo/Crop-disease-classification/assets/133736337/46f44caa-06f4-4c60-ad98-04904e40ca7d)
 
