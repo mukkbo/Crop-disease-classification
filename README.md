@@ -42,9 +42,9 @@
 </div>
 
 ## 3. Models
-  ### a. ResNet50
-  ### b. Simple-ViT
-  ### c. MAE-ViT
+  #### a. ResNet50
+  #### b. Simple-ViT
+  #### c. MAE-ViT
 
 앞서 소개한 Dataset은 포도 외 5가지 작물이 추가적으로 있습니다.
 
@@ -81,5 +81,8 @@ confusion matrix를 분석한 결과, 노균병과 축과병은 눈으로 식별
 
 ![image](https://github.com/mukkbo/Crop-disease-classification/assets/133736337/71e1f413-5a12-4986-8e06-fb42f32c6822)
 
+MAE-ViT를 이용해 특정 작물의 feature vector에 대해 더 잘 학습하려 하였지만, 이 시도는 위 테이블의 결과에 따르면 포도를 제외한 5가지 작물 전부에서 ResNet50 보다 낮은 성능을 보이면서 유추에 실패하였습니다.
 
-이 결과로부터, ViT가 ResNet보다 더 우수하다고 알려진 상황에서도 데이터셋에 따라 적합한 모델을 선택하는 것이 중요하다는 점을 확인할 수 있었습니다.
+또한 일부 작물에서는 ViT보다 ResNet50의 성능이 더 우수하다고 알려져 있음에도 데이터셋에 따라 성능은 달라질 수 있다는 점을 알 수 있었습니다. 또한 적합한 모델을 선택하는 것이 중요하다는 점을 확인할 수 있었습니다.
+
+이에 따라 최종적으로 선택된 모델은 딸기, 토마토, 오이, 고추의 경우는 ResNet50 모델을 사용하고, 파프리카, 포도 작물은 ViT w/ fine-tuned model을 사용할 예정입니다
