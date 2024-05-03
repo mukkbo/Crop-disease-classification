@@ -73,7 +73,7 @@ confusion matrix를 분석한 결과, 노균병과 축과병은 눈으로 식별
 
 포도 모각각 모델의 성능은 다음과 같습니다.
 
-![image](https://github.com/mukkbo/Crop-disease-classification/assets/133736337/8cb0113d-0438-4305-bb14-b0134d037c2b)
+![image](https://github.com/mukkbo/Crop-disease-classification/assets/133736337/46f44caa-06f4-4c60-ad98-04904e40ca7d)
 
 여기서 말하는 w/o fine-tuned는 Encoder를 frozen한 상태로 fc layer에서만 학습을 진행한 결과를 뜻 합니다.
 
